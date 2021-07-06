@@ -1,0 +1,9 @@
+title Tehtävä 0.4
+
+note over selain: käyttäjä kirjoittaa kenttään ja painaa nappia
+
+note over selain: selain pyytää olemassa olevan listan
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin->selain: palvelin lähettää arrayn tiedoista
+note over selain: skripti lisää rivin JSON-tiedostosta saatuihin tietoihin ja lähettää päivitetyn listan JSON-tiedostoon palvelimelle
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note

@@ -1,0 +1,12 @@
+title Tehtävä 0.6
+
+note over selain: käyttäjä luo uuden muistiinpanon spa-versiossa, painaa nappia
+
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: Toimittaa JSON-listan
+
+note over selain: haetaan skripteillä JSON-tiedot joihin lisätään yksi listalle
+
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/new_note_spa
+note over selain: skriptit käskevät header-tiedon ilmaisun että tiedot lähetetään JSON-muodossa
+
